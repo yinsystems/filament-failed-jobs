@@ -2,6 +2,9 @@
 
 This package provides a `Failed Jobs` resource that allows you to view your Failed jobs in a simple UI.
 
+![image-1.png](./image-1.png)
+![image-2.png](./image-2.png)
+
 ## Installation
 
 You can install the package via Composer:

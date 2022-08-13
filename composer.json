@@ -1,17 +1,17 @@
 {
-    "name": "amvisor/filament-failed-jobs",
-    "description": "A simplistics failed jobs viewer for your Filament apps.",
+    "name": "yinsystems/filament-failed-jobs",
+    "description": "A simplistic failed jobs viewer for your Filament apps.",
     "keywords": [
         "laravel",
         "filament",
         "filament-failed-jobs"
     ],
-    "homepage": "https://gitlab.com/amvisor/filament-failed-jobs",
+    "homepage": "https://github.com/yinsystems/filament-failed-jobs",
     "license": "MIT",
     "authors": [
         {
-            "name": "Herbert Maschke",
-            "email": "thyseus@pm.me",
+            "name": "Yin systems",
+            "email": "jude@yinsys.com",
             "role": "Developer"
         }
     ],

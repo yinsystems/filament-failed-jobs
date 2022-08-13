@@ -10,14 +10,16 @@ This package provides a `Failed Jobs` resource that allows you to view your Fail
 You can install the package via Composer:
 
 ```bash
-composer require amvisor/filament-failed-jobs
+composer require yinsystems/filament-failed-jobs
 ```
 
 You can publish the config file with:
 
-```bash
-php artisan vendor:publish --tag="filament-failed-jobs-config"
-```
+[comment]: <> (```bash)
+
+[comment]: <> (php artisan vendor:publish --tag="filament-failed-jobs-config")
+
+[comment]: <> (```)
 
 ### Authorization
 

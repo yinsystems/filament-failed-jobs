@@ -10,21 +10,22 @@ use Illuminate\Support\Facades\Artisan;
 
 class ListFailedJobs extends ListRecords
 {
-	protected static string $resource = FailedJobsResource::class;
+    protected static string $resource = FailedJobsResource::class;
 
-	public function getActions(): array
-	{
-		return [
-			Action::make('retry_all')
-				->label('Retry all failed Jobs')
-				->requiresConfirmation()
-				->action(function (): void {
-					Artisan::call('queue:retry all');
-					Notification::make()
-						->title('All failed jobs have been pushed back onto the queue.')
-						->success()
-						->send();
-				}),
-		];
-	}
+    public function getActions(): array
+    {
+        return [
+            Action::make('retry_all')
+                ->label('Retry all failed Jobs')
+                ->requiresConfirmation()
+                ->action(function (): void {
+                    Artisan::call('queue:retry all');
+                    Notification::make()
+                        ->body('All failed jobs have been pushed back onto the queue.')
+                        ->title('Failed Jobs.')
+                        ->success()
+                        ->send();
+                }),
+        ];
+    }
 }
